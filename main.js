@@ -9,7 +9,8 @@ var answer = document.getElementById("answer");
 
 
 // beginning of the calculate function//
-var calculate = function () {
+var calculate = function (event) {
+	event.preventDefault();
 var x = document.getElementById("value-one");
 var y =	document.getElementById("value-two");
 //making x and y a number//
@@ -18,6 +19,7 @@ var y = Number(y.value);
 
 //defining the sum//
 var sum = x + y ;
+	event.preventDefault()
 	answer.innerHTML=sum;
 }; // end of calculate function //
 	
